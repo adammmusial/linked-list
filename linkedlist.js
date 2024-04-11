@@ -20,8 +20,21 @@ export default class LinkedList {
           let tmp = this.listHead;
 
           while (tmp.nextNode != null) tmp = tmp.nextNode;
-          
+
           tmp.nextNode = new Node(value);
         }
       }
-}
+    
+    size(){
+
+        let tmp = this.listHead
+        let counter = 0    
+    
+        while (tmp !== null ){
+            counter++;
+            tmp = tmp.nextNode
+        }
+        
+        return counter
+    }
+}   
