@@ -65,6 +65,17 @@ export default class LinkedList {
             previous = current
             current = current.nextNode
         }
+        previous.nextNode = null
+    }
+
+    
+    contains(value){
+        let tmp = this.listHead
+        while (tmp != null){
+            if (tmp.value === value)  return true
+            tmp = tmp.nextNode
+        }
+        return false
     }
     
     
