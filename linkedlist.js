@@ -58,4 +58,14 @@ export default class LinkedList {
         return tmp;
       }
     
+    pop(){
+        let current = this.listHead
+        let previous = null
+        while (current.nextNode != null){
+            previous = current
+            current = current.nextNode
+        }
+    }
+    
+    
 }   
