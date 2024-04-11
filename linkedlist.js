@@ -1,4 +1,4 @@
-import Node from "./node";
+import Node from "./node.js";
 
 export default class LinkedList {
     constructor() {
@@ -34,7 +34,7 @@ export default class LinkedList {
             counter++;
             tmp = tmp.nextNode
         }
-        
+
         return counter
     }
 }   

@@ -6,10 +6,11 @@
   "author": "adammmusial <musialadam83@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node node.js",
+    "start": "node index.js",
     "release": "standard-version"
   },
   "devDependencies": {
     "standard-version": "^9.0.0"
-  }
+  },
+  "type": "module"
 }
