@@ -93,6 +93,18 @@ export default class LinkedList {
         return null
 
     }
-    
+
+    toString(){
+
+        let tmp = this.listHead
+        let stringList = '';
+
+        while (tmp != null) {
+            stringList += `(${tmp.value}) -> `
+            tmp = tmp.nextNode
+        }
+        return (stringList += "null")
+
+    }
     
 }   
