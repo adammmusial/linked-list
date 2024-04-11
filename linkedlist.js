@@ -68,7 +68,7 @@ export default class LinkedList {
         previous.nextNode = null
     }
 
-    
+
     contains(value){
         let tmp = this.listHead
         while (tmp != null){
@@ -76,6 +76,22 @@ export default class LinkedList {
             tmp = tmp.nextNode
         }
         return false
+    }
+
+
+    find(value){
+
+        let tmp = this.listHead
+        let index = 0
+
+        while (tmp !=null){
+            if (tmp.value === value) return index
+            tmp = tmp.nextNode
+            index++
+        }
+
+        return null
+
     }
     
     
