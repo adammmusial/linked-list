@@ -37,4 +37,8 @@ export default class LinkedList {
 
         return counter
     }
+
+    head(){
+        return this.listHead
+    }
 }   
