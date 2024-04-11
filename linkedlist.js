@@ -47,4 +47,15 @@ export default class LinkedList {
         while (tmp.nextNode != null) tmp = tmp.nextNode;
         return tmp
     }
+
+    atIndex(index) {
+        let tmp = this.listHead;
+        for (let i = 0; i < index; i++) {
+          tmp = tmp.nextNode;
+          if (tmp == null) return "There is no item for this index";
+          console.log(tmp)
+        }
+        return tmp;
+      }
+    
 }   
