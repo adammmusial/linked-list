@@ -1,16 +1,28 @@
-# Linked List
-Singly Linked List implemented with JavaScript
+# LinkedList 
+
+## About the Project
+This project is a custom implementation of a LinkedList data structure using JavaScript. The LinkedList class provides methods to manipulate and interact with the list, such as adding elements to the front or end, retrieving the size of the list, finding elements by value or index, and converting the list to a string representation. This project helped me learn about node-based data structures and their operations.
 
 ## Features
-- `append(value)` adds a new node containing value to the end of the list or to start if list is empty
-- `prepend(value)` adds a new node containing value to the start of the list
-- `size()` returns the total number of nodes in the list
-- `head()` returns the first node in the list
-- `tail()` returns the last node in the list
-- `at(index)` returns the node at the given index or error message if there is no node in the requested index
-- `pop()` removes the last element from the list
-- `contains(value)` returns true if the passed in value is in the list and otherwise returns false
-- `find(value)` returns the index of the node containing value, or null if not found
-- `toString()` returns your LinkedList objects as strings in the format: `( value ) -> ( value ) -> ( value ) -> null`
-- `insertAt(value, index)` inserts a new node with the provided value at the given index or at the end of the list if index is bigger than list size
-- `removeAt(index)` removes the node at the given index or error message if the list is empty or if the request index is bigger than list size
+- `prepend(value)`: Adds a new node containing the given value to the start of the list.
+- `append(value)`: Adds a new node containing the given value to the end of the list.
+- `size()`: Returns the number of nodes in the list.
+- `head()`: Returns the first node in the list.
+- `tail()`: Returns the last node in the list.
+- `atIndex(index)`: Returns the node at the specified index.
+- `pop()`: Removes the last node from the list.
+- `contains(value)`: Checks if a value is present in the list. Returns true or false.
+- `find(value)`: Returns the index of the node containing the value. If not found, returns null.
+- `toString()`: Converts the list to a string representation.
+
+## Key learnings:
+- Understanding linked data structures and node manipulation
+- Implementing methods to interact with a LinkedList
+- Managing dynamic data and node references
+- Converting a data structure to a readable string format
+
+## Technologies Used
+<img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" width="50">
+
+## Resources Used
+- **JavaScript Documentation**: For understanding object-oriented programming and data structures.
